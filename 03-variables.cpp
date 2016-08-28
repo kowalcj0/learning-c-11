@@ -40,11 +40,25 @@ int main()
 
 
     // STRINGS
-    string z = "String: regular initialization";
-    string y ("String: constructor initialization");
-    string x {"String: uniform initialization (introduced in c++11)"};
+    string i = "String: regular initialization";
+    string j ("String: constructor initialization");
+    string k {"String: uniform initialization (introduced in c++11)"};
+    string l = "String expressed \
+                in 2 lines";
+    string m = R"(First line.\nSecond line.\nEnd of message.\n)"; // RAW string
 
-    cout << z << endl;
-    cout << y << endl;
-    cout << x << endl;
+    cout << i << endl;
+    cout << j << endl;
+    cout << k << endl;
+    cout << l << endl;
+    cout << m << endl;
+
+    // Other literals
+    bool n = true;
+    bool o = false;
+    int* p = nullptr;
+
+    cout << n << endl;
+    cout << o << endl;
+    cout << p << endl;
 }

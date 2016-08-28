@@ -1,3 +1,6 @@
+clean:
+	rm -fr *.bin
+
 binaries: $(patsubst %.cpp, %.bin, $(wildcard *.cpp))
 
 %.bin: %.cpp Makefile
